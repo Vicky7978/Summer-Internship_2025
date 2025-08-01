@@ -1,0 +1,31 @@
+v {xschem version=3.4.8RC file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 220 90 220 170 {}
+L 4 220 90 310 140 {}
+L 4 220 170 310 140 {}
+L 7 240 80 240 100 {}
+L 7 310 140 330 140 {}
+L 7 200 120 220 120 {}
+L 7 200 150 220 150 {}
+L 7 260 90 260 110 {}
+L 7 260 160 260 180 {}
+B 5 237.5 77.5 242.5 82.5 {name=AVDD dir=inout}
+B 5 327.5 137.5 332.5 142.5 {name=vop dir=inout}
+B 5 197.5 117.5 202.5 122.5 {name=vinm dir=inout}
+B 5 197.5 147.5 202.5 152.5 {name=vinp dir=inout}
+B 5 257.5 87.5 262.5 92.5 {name=1b5u dir=inout}
+B 5 257.5 177.5 262.5 182.5 {name=AVSS dir=inout}
+T {nmos_opa} 218.5 124 0 0 0.3 0.3 {}
+T {AVDD} 226 65 3 1 0.2 0.2 {}
+T {vop} 325 146 0 1 0.2 0.2 {}
+T {vinm} 225 116 0 0 0.2 0.2 {}
+T {vinp} 225 146 0 0 0.2 0.2 {}
+T {1b5u} 266 85 3 1 0.2 0.2 {}
+T {AVSS} 274 185 1 1 0.2 0.2 {}
